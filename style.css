@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #080530;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    background: linear-gradient(to bottom, rgba(88, 0, 136, 0.5), rgba(17, 4, 79, 0.5));
+    gap: 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+header button{
+    background: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid lightblue;    
+}
+
+button:hover{
+    background: black;
+    color: orange;
+}
+
+h1{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2rem;
+}
+
+section{
+    display: flex;
+    height: 100dvh;
+    align-items: center;
+    padding: 1rem;
+}
+
+.T1{
+    justify-content: space-around;
+    height: 100dvh;
+}
+
+.T2{
+    justify-content: space-evenly;
+    height: 100dvh;
+    gap: 5rem;
+}
+
+.T2 article{
+    padding: 1rem;
+    background: #5e026c;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.T3{
+    background: #4d0974;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: orange;
+}
+
+img:hover{
+    transform: scale(1.20);
+    transition: 0.5s;
+}
+
+footer{
+    height: 50dvh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid red
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+}
