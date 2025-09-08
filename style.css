@@ -50,6 +50,65 @@ section{
     padding: 1rem;
 }
 
+.button{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    bottom: 8%;
+}
+
+.button button{
+    border-radius: 10px;
+    background: #080441;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 5rem;
+    cursor: pointer;
+}
+
+.button svg{
+    color: lightblue;
+    position: absolute;
+    bottom: 5%;
+    animation: levitacion 2s linear infinite;
+}
+
+@keyframes levitacion{
+    0%{
+        bottom: 5%;
+    }
+
+    20%{
+        bottom: 9%;
+    }
+
+    40%{
+        bottom: 13%;
+    }
+
+    60%{
+        bottom: 13%;
+    }
+
+    80%{
+        bottom: 9%;
+    }
+
+    100%{
+        bottom: 5%;
+    }
+}
+
+.button button:hover{
+    box-shadow: 0 0 5px rgb(0, 102, 255);
+    transform: scale(1.20);
+    transition: 0.3s;
+}
+
 .T1{
     justify-content: space-around;
     height: 100dvh;
